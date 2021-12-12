@@ -1,12 +1,12 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/home';
 import About from './components/about';
 
 function App() {
   return (
     <>
-      <Router>
+      <Router base="/">
       <Routes>
         <Route path='/' exact element={<Home />} />
         <Route path='/about' exact element={<About />} />
