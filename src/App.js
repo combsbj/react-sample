@@ -6,7 +6,7 @@ import About from './components/about';
 function App() {
   return (
     <>
-        <Router>
+      <Router>
       <Routes>
         <Route path='/' exact element={<Home />} />
         <Route path='/about' exact element={<About />} />
